@@ -24,10 +24,7 @@ public class SSLCertificateInterceptor extends AGenericInterceptor {
                 new Rule.Builder( "java.security.cert.X509Certificate").classMatchType(SDKClassMatchType.MATCHES_CLASS).methodMatchString("getInstance").build()
         );
         rules.add(
-                new Rule.Builder( "javax.security.cert.X509Certificate").classMatchType(SDKClassMatchType.INHERITS_FROM_CLASS).methodMatchString("getInstance").build()
-        );
-        rules.add(
-                new Rule.Builder( "javax.security.cert.X509Certificate").classMatchType(SDKClassMatchType.MATCHES_CLASS).methodMatchString("getInstance").build()
+                new Rule.Builder( "javax.security.cert.X509Certificate").classMatchType(SDKClassMatchType.IMPLEMENTS_INTERFACE).methodMatchString("getInstance").build()
         );
         return rules;
     }
