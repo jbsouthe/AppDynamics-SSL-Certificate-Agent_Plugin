@@ -1,3 +1,5 @@
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/jbsouthe/AppDynamics-SSL-Certificate-Agent_Plugin)
+
 ## Theory of operation
 
 This plugin will watch for low level SSL certificate operations and for any that the JVM is using, it will check the expiration and do a couple of things
